@@ -1,0 +1,16 @@
+.simpleThumbnail {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  img {
+    border-radius: 10px;
+  }
+}
+
+.expandedThumbnail {
+  width: 120px;
+  height: 120px;
+  img {
+    border-radius: 10px;
+  }
+}

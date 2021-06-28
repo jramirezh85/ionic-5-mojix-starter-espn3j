@@ -1,2 +1,34 @@
 /* Add application styles & imports to this file! */
 @import '~@ionic/angular/css/ionic.bundle.css';
+
+.fullWidth {
+  width: 100% !important;
+}
+
+ion-card {
+  border-radius: 20px;
+}
+
+.searchbar-input {
+  border-radius: 20px !important;
+}
+
+ion-card-content {
+  padding: inherit;
+}
+
+.classLightyellow {
+  --ion-background-color: lightyellow;
+}
+
+.classlightgreen {
+  --ion-background-color: lightgreen;
+}
+
+.classLightblue {
+  --ion-background-color: lightblue;
+}
+
+.labelPrice {
+  max-width: 70px;
+}

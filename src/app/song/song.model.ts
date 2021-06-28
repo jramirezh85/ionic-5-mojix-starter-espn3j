@@ -13,9 +13,11 @@ export interface SongModel {
   collectionPrice: number;
   trackPrice: number;
   releaseDate: string;
+  date?: string;
   collectionExplicitness: string;
   trackExplicitness: string;
   trackTimeMillis: number;
+  trackTime?: string;
   country: string;
   currency: string;
   primaryGenreName: string;

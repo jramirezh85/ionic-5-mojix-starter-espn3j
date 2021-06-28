@@ -1,1 +1,31 @@
-<p>I'm a component</p>
+<ion-card (click)="changeExpand($event)" [style.background-color]="color">
+  <ion-card-content>
+
+    <ion-item lines="none" *ngIf="!expanded"
+      [ngClass]="{'classLightyellow':color ==='lightyellow', 'classlightgreen': color==='lightgreen', 'classLightblue':color==='lightblue'}">
+      <ion-thumbnail slot="start" class="simpleThumbnail">
+        <img  [src]="currentSong?.artworkUrl100">
+      </ion-thumbnail>
+      <ion-label>
+        {{currentSong.artistName}}
+        <p>{{currentSong.trackName}}</p>
+      </ion-label>
+      <ion-label slot="end" class="labelPrice">
+        <p><b>{{currentSong.trackPrice}}</b> USD</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item lines="none" *ngIf="expanded" [ngClass]="{'classLightyellow':color ==='lightyellow', 'classlightgreen': color==='lightgreen', 'classLightblue':color==='lightblue'}">
+      <ion-thumbnail slot="start" class="expandedThumbnail">
+        <img  [src]="currentSong?.artworkUrl100">
+      </ion-thumbnail>
+      <ion-label>
+        {{currentSong.artistName}}
+        <p>{{currentSong.trackName}}</p>
+        <p>{{currentSong.trackTime}}</p>
+        <p>{{currentSong.date}}</p>
+        <p><b>{{currentSong.trackPrice}}</b> USD</p>
+      </ion-label>
+    </ion-item>
+  </ion-card-content>
+</ion-card>
